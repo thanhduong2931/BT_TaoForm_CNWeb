@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form1</title>
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .Login{
+            width: 350px;
+            height: 150px;
+            background-color: aquamarine;
+            margin-top: 30vh;
+            margin-left: 35vw;
+        }
+
+        .header{
+            text-align: center;
+            padding: 8px 0;
+        }
+
+        .contain_input{
+            margin-left: 8px;
+        }
+
+        .input_user{
+            margin-left: 25px;
+            margin-bottom: 8px;
+            line-height: 16px;
+        }
+
+        .input_pw{
+            margin-left: 28px;
+            margin-bottom: 8px;
+            line-height: 16px;
+        }
+
+        .btn{
+            padding: 2px 4px;
+            cursor: pointer;
+        }
+        .contain_btn {
+            margin-left: 50%;
+        }
+    </style>
+</head>
+<body>
+        <Form class="Login">
+            <h4 class="header">Login</h4>
+            <div class="contain_input">
+                Username <input type="text" class="input_user"> <br>
+                Password <input type="password" class="input_pw">
+            </div>
+            <div class="contain_btn">
+                <input type="submit" class="btn btnOK" value="OK">
+                <input type="reset" class="btn btnReset" value="Reset">
+            </div>
+        </Form>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chữ hoa</title>
+    <style>
+        .form{
+            margin-top: 40vh;
+            margin-left: 35vw;
+            font-size: 20px;
+        }
+
+        #text_input{
+            font-size: 20px;
+        }
+    </style>
+    <Script language="JavaScript">
+		function chuhoa()
+		{
+            var bien = document.getElementById("text_input").value
+            document.getElementById("text_input").value = bien.toUpperCase()
+		}
+	</Script>
+</head>
+<body>
+    <Form name="form1" class="form">
+        Enter Text: <input type="text" name="input" value="" id="text_input" onblur="chuhoa()">
+    </Form>
+</body>
+</html>

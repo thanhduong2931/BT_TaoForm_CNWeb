@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đổi màu</title>
+    <style>
+        .form{
+            margin-top: 40vh;
+            margin-left: 35vw;
+        }
+
+        #text_input{
+            font-size: 20px;
+        }
+        .btn{
+            font-size: 20px;
+        }
+    </style>
+    <Script language="JavaScript">
+		function doimau()
+		{
+            var color = document.getElementById("text_input").value
+            document.body.style.backgroundColor = color;
+		}
+	</Script>
+</head>
+<body>
+    <Form name="form1" class="form">
+        <input type="text" name="input" value="" id="text_input">
+        <input type="button" name="btnOK" class="btn" value="OK" onclick="doimau()">
+        <input type="reset" name="btnReset" class="btn" value="Reset">
+    </Form>
+</body>
+</html>
